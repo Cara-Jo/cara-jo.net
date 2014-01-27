@@ -1,1 +1,99 @@
-Cara-jo.net
+<!doctype html>
+<html>
+<head>
+	<title>Cara Jo Miller does many things</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=1;">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Raleway:400,300,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="font/carrington.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2733169-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+	<div id="wrapper">
+	<div id="profile">
+	</div>
+	<h1>Cara Jo <span>Miller</span></h1>
+	<h3>est. 1984</h3>
+	<h2 class="position">Founder: Girl Develop It Boulder</h2>
+	<h2 class="position">Founding Instructor: Girl Develop It Detroit</h2>
+	<h2 class="position">Lead UI/UX Designer: Simple Energy</h2>
+	<h2 class="position">Founder: Run This Race</h2>
+	<h2 class="position">Photographer</h2>
+	<h2 class="position">Half-Marathoner soon-to-be Marathoner</h2>
+	<h2 class="position">Boulderite</h2>
+	<h2 class="position">Always a Detroiter</h2>
+	<ul id="social">
+		<li id="email"><a href="mailto:me@cara-jo.net">Email</a></li>
+		<li id="twitter"><a href="http://twitter.com/corrinajo" target="_blank">Twitter</a></li>
+		<li id="facebook"><a href="http://facebook.com/cara.jo" target="_blank">Facebook</a></li>
+		<li id="flickr"><a href="http://flickr.com/photos/carajo" target="_blank">Flickr</a></li>
+		<li id="instagram"><a href="http://instagram.com/carajo" target="_blank">Instagram</a></li>
+		<li id="dribbble"><a href="http://dribbble.com/CorrinaJo" target="_blank">Dribbble</a></li>
+		<li id="linkedin"><a href="http://www.linkedin.com/in/carajomiller/" target="_blank">LinkedIn</a></li>
+	</ul>
+	<a href="carajomillerresume2013.pdf" id="download">Download Resume (.pdf)</a>
+	</div>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="backstretch.js"></script>
+	<script>
+		$.backstretch(["images/sunset-detroit.jpg"]);
+		(function() {
+
+    var quotes = $(".position");
+    var quoteIndex = -1;
+    
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(800)
+            .delay(2000)
+            .fadeOut(800, showNextQuote);
+    }
+    
+    showNextQuote();
+    
+})();
+	</script>
+	<script type="application/x-javascript"> 
+					    
+					    addEventListener("load", function()
+					    {
+					        setTimeout(updateLayout, 0);
+					    }, false);
+					 
+					    var currentWidth = 0;
+					    
+					    function updateLayout()
+					    {
+					        if (window.innerWidth != currentWidth)
+					        {
+					            currentWidth = window.innerWidth;
+					 
+					            var orient = currentWidth == 320 ? "profile" : "landscape";
+					            document.body.setAttribute("orient", orient);
+					            setTimeout(function()
+					            {
+					                window.scrollTo(0, 1);
+					            }, 100);            
+					        }
+					    }
+					 
+					    setInterval(updateLayout, 400);
+					    
+					</script>
+</body>
+</html>
+

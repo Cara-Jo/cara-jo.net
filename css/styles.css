@@ -1,0 +1,48 @@
+/* CSS RESET http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video { 	margin: 0; 	padding: 0; 	border: 0; 	font-size: 100%; 	font: inherit; 	vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section { 	display: block; } body { 	line-height: 1; } ol, ul { 	list-style: none; } blockquote, q { 	quotes: none; } blockquote:before, blockquote:after, q:before, q:after { 	content: ''; 	content: none; } table { 	border-collapse: collapse; 	border-spacing: 0; }
+
+body {font-family: 'PT Sans', helvetica, sans-serif; text-align: center; color: #4A505C;}
+
+#wrapper {width: 100%; max-width: 500px; margin: 20px auto;}
+#profile {border-radius: 50%; height: 140px; width: 140px; background: url(../images/cojo.jpg) no-repeat; background-size: 140px; margin: 10px auto 20px auto;}
+
+h1 {font-family:'Raleway'; text-transform: uppercase; font-size: 500%; font-weight: 800; margin: 20px 0;}
+	h1 span {display: block; font-weight: 300; font-size: 115%;}
+
+h3 {font-family: 'CarringtonRegular', cursive; font-size: 200%;}
+
+
+.position {display: none; color: #F0F0DF; font-size: 130%; margin: 20px 0; font-weight: 700; height: 40px;}
+
+#social {max-width: 330px; margin: 0 auto; overflow: hidden;}
+#social li {height: 36px; width: 36px; display: block; text-indent: -9000px; float: left; background: url(../images/sprite-icons.png) no-repeat 0 0; margin: 0 5px;}
+	#social #email {background-position: 0 0;}
+	#social #twitter {background-position: -46px 0;}
+	#social #facebook {background-position: -92px 0;}
+	#social #flickr {background-position: -137px 0;}
+	#social #instagram {background-position:-183px 0;}
+	#social #dribbble {background-position: -229px 0;}
+	#social #linkedin {background-position: -275px 0 ;}
+	#social li:first-child {margin-left: 0px;;}
+	#social li:last-child {margin-right: 0px;}
+#social li a {display: block; height: 100%; width: 100%;}
+
+a#download, a:link#download, a:visited#download {clear: both; border-radius: 20px; background: #4A505C; color: #F0F0DF; height: 40px; display: inline-block; padding: 0 20px; line-height: 40px; text-decoration: none; margin: 20px auto; font-size: 90%;}
+a:hover#download {background: #3F454F;}
+
+
+@media only screen and (max-device-width: 480px) {
+	#wrapper {width: 90%;}
+	h1 {font-size: 380%;}
+	#social li {margin: 0 3px;}
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2)	{
+	#social li {background: url(../images/sprite-icons.png) no-repeat 0 0; background-size: 173px 108px;}
+	#social #email {background-position: 0 -25px;}
+	#social #twitter {background-position: -46px -25px;}
+	#social #facebook {background-position: -92px -25px;}
+	#social #flickr {background-position: -137px -25px;}
+	#social #instagram {background-position: 0 -71px;}
+	#social #dribbble {background-position: -46px -71px;}
+	#social #linkedin {background-position: -92px -71px ;}
+}
